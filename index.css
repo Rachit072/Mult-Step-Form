@@ -1,3 +1,5 @@
 .side_bar{
    display: flex; 
+   flex-direction: column;
+   background-color: aqua;
 }
