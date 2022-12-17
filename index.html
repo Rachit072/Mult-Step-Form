@@ -7,24 +7,37 @@
   <link rel="stylesheet" href="index.css">
   <style>
   </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
   <div class="main_container">
   <div class="container">
     <div class="side_bar">
-        <div class="steps">Step 1</div>
-          <div id="sinfo">YOUR INFO</div> 
-        <div class="steps">Step 2 </div>
-          <div id="sinfo">SELECT PLAN</div>
-        <div class="steps">Step 3 </div>
-          <div id="sinfo">ADD-ONS</div> 
-        <div class="steps">Step 4 </div>
-          <div id="sinfo">SUMMARY</div> 
+        <div class="steps">
+          <span class="bullet">1</span> 
+          <span>Step 1</span> 
+          <div id="sinfo"> &nbsp &nbsp YOUR INFO</div> 
+        </div>
+        <div class="steps">
+          <span class="bullet">2</span> 
+          <span>Step 2</span>
+          <div id="sinfo">&nbsp &nbsp SELECT PLAN</div>
+        </div>
+        <div class="steps">
+          <span class="bullet">3</span> 
+          <span>Step 3</span>
+          <div id="sinfo">&nbsp &nbsp ADD-ONS</div> 
+        </div>
+        <div class="steps">
+          <span class="bullet">4</span> 
+          <span>Step 1</span> 
+          <div id="sinfo">&nbsp &nbsp SUMMARY</div>
+        </div> 
     </div>
     <div class="form">
+      <form>
       <h1>Personal info</h1>
       <p>Please provide your name, email address, and phone number.</p><br><br>
-      <form>
         <div>
           <label for="name">Name</label><br>
           <input type="text" name="name" id="name" placeholder="ex: Nick" required>
@@ -38,9 +51,59 @@
           <input type="tel" name="number" id="number" placeholder="ex: +91-9811612345" required>
         </div>
         <div><br><br>
-          <button style="color:blue;" >Next Step</button>
-        </div>
-      </form>
+          <button style="color:blue;" class="1-next">Next Step</button>
+      <h1>Select your plan</h1>
+      <p>You have the option of monthy or yearly billing.</p><br><br>
+      <div class="plan" >
+        <label for="arcade">Arcade</label>
+        <input type="radio" name="plan"  id="arcade"checked>
+        <p>$9/mo</p>
+      </div>
+      <div class="plan"  >
+        <label for="advance">Advance</label>
+        <input type="radio" name="plan" id="advance">
+        <p>$12/mo</p>
+      </div>
+      <div class="plan"  >
+        <label for="pro">Pro</label>
+        <input type="radio" name="plan" id="pro">
+        <p>$15/mo</p>
+      </div>
+          <button style="color:blue;" class="back1">Go back</button>
+          <button style="color:blue;" class="2-next" >Next Step</button>
+      <h1>Pick add-ons</h1>
+      <p>Add-ons help enhance your gaming experience.</p><br><br>
+      <div class="add" >
+        <label for="online">Online service</label>
+        <input type="checkbox" name="online"  id="online"checked>
+        <p>+$1/mo</p>
+      </div>
+      <div class="add"  >
+        <label for="storage">Larger Storage</label>
+        <input type="checkbox" name="storage" id="storage">
+        <p>+$2/mo</p>
+      </div>
+      <div class="add"  >
+        <label for="custom">custimizable profile</label>
+        <input type="checkbox" name="custom" id="custom">
+        <p>+$2/mo</p>
+      </div>
+          <button style="color:blue;"class="back2" >Go back</button>
+          <button style="color:blue;" class="3-next">Next Step</button>
+      <h1>Finnishing up</h1>
+      <p>Double-check everything before confirming.</p><br><br>
+      <div class="summary" >
+        
+      </div>
+      <div class="summary"  >
+        
+      </div>
+      <div class="summary"  >
+       
+      </div>
+          <button style="color:blue;"class="back3" >Go back</button>
+          <button style="color:blue;"class="confirm" >Confirm</button>
+    </form>
     </div>
   </div>
 </div>
