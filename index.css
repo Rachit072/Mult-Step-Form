@@ -1,3 +1,9 @@
+*{
+   margin: 0;
+   padding: 0;
+   outline: none;
+   font-family: 'Poppins', sans-serif;
+ }
 .side_bar{
    display: flex;
    flex-direction: column;
@@ -22,15 +28,18 @@ body{
    align-items: center;
    align-content: center;
    justify-content: center;
+   height: 100%;
 }
-.form{
-   margin-left: 40px;
+.container .form{
+   margin-left: 40p;
+   overflow: hidden;
    
 }
 .main_container{
    box-sizing: border-box;
    border-radius: 50px;
    margin-left: 250px;
+   overflow: hidden;
 }
 #sinfo{
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -49,4 +58,21 @@ input {
  }
  input:focus{
    background-color: lightblue;
+ }
+ .side_bar .steps .bullet{
+   height: 30px;
+   width: 30px;
+   border: 1px solid white;  
+   border-radius: 50%; 
+   font-size: 20px;
+   color: antiquewhite;
+ }
+ .plan{
+   display: flex;
+   border: 1px solid #000;
+   border-radius: 2px;
+ }
+ .form form .page{
+   width: 25%;
+   overflow: hidden;
  }
