@@ -36,6 +36,7 @@
     </div>
     <div class="form">
       <form>
+      <div class="page" >
       <h1>Personal info</h1>
       <p>Please provide your name, email address, and phone number.</p><br><br>
         <div>
@@ -52,30 +53,37 @@
         </div>
         <div><br><br>
           <button style="color:blue;" class="1-next">Next Step</button>
+        </div>  
+      </div>
+      <div class="page" ><br><br><br><br><br><br>
       <h1>Select your plan</h1>
       <p>You have the option of monthy or yearly billing.</p><br><br>
-      <div class="plan" >
+      <ul id="plan">
+      <li class="plan" >
         <label for="arcade">Arcade</label>
-        <input type="radio" name="plan"  id="arcade"checked>
-        <p>$9/mo</p>
-      </div>
-      <div class="plan"  >
-        <label for="advance">Advance</label>
-        <input type="radio" name="plan" id="advance">
+        <div>$9/mo</div>
+        <input type="radio" name="arcade"  id="arcade">
+      </li>
+      <li class="plan"  >
+        <label for="advance">Advance</label><br>
         <p>$12/mo</p>
-      </div>
-      <div class="plan"  >
-        <label for="pro">Pro</label>
-        <input type="radio" name="plan" id="pro">
+        <input type="radio" name="advance" id="advance">
+      </li>
+      <li class="plan"  >
+        <label for="pro">Pro</label><br>
         <p>$15/mo</p>
-      </div>
+        <input type="radio" name="pro" id="pro">
+      </li>
+      </ul>
           <button style="color:blue;" class="back1">Go back</button>
           <button style="color:blue;" class="2-next" >Next Step</button>
+      </div>
+      <div class="page" ><br><br><br><br><br><br>
       <h1>Pick add-ons</h1>
       <p>Add-ons help enhance your gaming experience.</p><br><br>
       <div class="add" >
         <label for="online">Online service</label>
-        <input type="checkbox" name="online"  id="online"checked>
+        <input type="checkbox" name="online"  id="online">
         <p>+$1/mo</p>
       </div>
       <div class="add"  >
@@ -90,6 +98,8 @@
       </div>
           <button style="color:blue;"class="back2" >Go back</button>
           <button style="color:blue;" class="3-next">Next Step</button>
+      </div>
+      <div class="page" > <br><br><br><br><br><br>  
       <h1>Finnishing up</h1>
       <p>Double-check everything before confirming.</p><br><br>
       <div class="summary" >
@@ -103,6 +113,7 @@
       </div>
           <button style="color:blue;"class="back3" >Go back</button>
           <button style="color:blue;"class="confirm" >Confirm</button>
+      </div>    
     </form>
     </div>
   </div>
